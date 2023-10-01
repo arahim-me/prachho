@@ -1,0 +1,28 @@
+@media screen and (max-width: 870px)  {
+    .navigation .menu{
+        display: none;
+    }
+    .navigation .container{
+        flex-direction: column;
+        transition: 1s;
+    }
+    .close-btn{
+        padding: 18px;
+        border-radius: 15px 0 15px 0;
+        display: block;
+    }
+    nav.expand{
+        display: flex;
+        flex-direction: column;
+        transition: 1s;
+        transform-origin: top;
+        transition: 1s;
+    }
+    .expand .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2em 0;
+    }
+}

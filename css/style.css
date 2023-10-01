@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    height: 100%;
+    width: auto;
+}
+
+.container {
+    width: 95%;
+    max-width: 1145px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav.navigation {
+    background: #d3fdfb;
+    transition: 1s;
+}
+
+.navigation .container {
+    height: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .logo-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.navigation .menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0.6em;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #0e1b1d;
+    font-size: 1.3em;
+}
+
+ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #0e1b1d;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+
+ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.login-btn,
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3em 1em;
+    margin: .6em;
+    border: 2px solid hsla(188, 35%, 8%, 0.5);
+    border-radius: .4em;
+    font-size: 1.3em;
+    transform-origin: right;
+    transition: 0.5s;
+}
+
+.login-btn:hover {
+    transform-origin: left;
+    background: #0e1b1d;
+    color: #fff;
+    cursor: pointer;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+/* Main Area Style */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(178, 247, 247, 0.7), rgba(181, 238, 235, 0.7)), url('../img/bg.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+main .container{
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 40px 0;
+}
+main h2{
+    font-size: 2.3em;
+    text-transform: uppercase;
+    color: #04293f;
+    margin: 20px auto;
+}
+
+/* Footer Area Style */
+.footer{
+    height: 100px;
+    width: 100%;
+    background: #b9f8f5a8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0e1b1d;
+}
+
+
+
+/* BASIC SETUP */
+img {
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    width: 96%;
+}
+
+.inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* BUTTON STYLE */
+button{
+    margin: 15px;
+    padding: 12px 25px;
+    color: #fff;
+    background: #04293f;
+    border: 1px solid #04293f;
+    border-radius: 3px;
+}
+button:hover{
+    color: #04293f;
+    background: #fff;
+    border: 1px solid #04293f;
+    transition: 0.3s;
+}
+.close-btn{
+    padding: 18px;
+    border-radius: 15px 0 15px 0;
+    display: none;
+}
+.close-btn:hover{
+    background: hsla(202, 88%, 13%, 0.5);
+    transition: 0.5s;
+}
+.close-btn .icon{
+    width: 20px;
+}
+.box-btn{
+    width: 100%;
+}
+.box-btn button{
+    margin: 15px auto 0 auto;
+    cursor: pointer;
+}
+.box-btn a{
+    text-decoration: none;
+}
+/* IMAGE STYLE */
+.box-img {
+    width: 300px;
+    height: 220px;
+    margin: 18px auto;
+    border: 1px solid #04293f;
+    border-radius: 10px;
+}
+.box-img img{
+    border-radius: 10px;
+}
+
+img.icon {
+    width: 30px;
+}
+
+/* BOX STYLE */
+.packages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;align-items: flex-start;
+}
+.box {
+    border: 2px solid #04293f;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.domestic-tour,
+.international-tour{
+    max-width: 400px;
+    margin: 18px 15px;
+    flex-direction: column;
+}
+.arrow-indicator{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.tour-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
